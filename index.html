@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mind Glow</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="bg-[#FFFDF3] text-[#524632] font-sans">
+
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="logo">
+            <img src="https://cdn-icons-png.flaticon.com/512/1454/1454818.png" class="w-10 h-10 mr-2" alt="Logo">
+            <span>Mind<span class="text-[#EEC643]">Glow</span></span>
+        </div>
+        <div class="menu hidden md:flex space-x-8 text-lg font-semibold">
+            <a href="index.html" class="hover:underline">Home</a>
+            <a href="#" class="hover:underline">Health & Wellness</a>
+            <a href="#" class="hover:underline">Services</a>
+            <a href="about.html" class="hover:underline">About us</a>
+        </div>
+    </nav>
+
+    <!-- Hero Section (Image Slider) -->
+    <section class="relative flex flex-col items-center text-center mt-10 px-4">
+        <div class="slider-container relative w-full max-w-4xl overflow-hidden rounded-lg">
+            <div id="slider" class="slider-track flex transition-transform duration-700 ease-in-out">
+                <img src="https://images.pexels.com/photos/17862938/pexels-photo-17862938/free-photo-of-a-boat-traveling-on-the-ocean-near-a-rocky-shore.jpeg?auto=compress&cs=tinysrgb&w=1260&h=1260&dpr=1"
+                    class="slider-image" alt="Hero Image 1">
+                <img src="https://i.pinimg.com/736x/49/e4/62/49e462428f00f0636fea83f36d99b7b6.jpg" class="slider-image"
+                    alt="Hero Image 2">
+                <img src="https://i.pinimg.com/736x/35/06/f8/3506f892abd69c588bda6baea3bcb73c.jpg" class="slider-image"
+                    alt="Hero Image 3">
+                <img src="https://i.pinimg.com/736x/1d/f8/03/1df8039e095d77be6abc3b2fd873e7b8.jpg" class="slider-image"
+                    alt="Hero Image 4">
+            </div>
+
+            <button id="prev" class="slider-button slider-prev">
+                ❮
+            </button>
+
+            <button id="next" class="slider-button slider-next">
+                ❯
+            </button>
+        </div>
+
+        <h1 class="hero-heading">
+            Your trusted guide to <br> mental health & wellness
+        </h1>
+    </section>
+
+    <!-- Explore Care Section -->
+    <section class="mt-16 px-4 lg:px-20">
+
+        <div class="flex items-center justify-between">
+            <h2 class="text-2xl font-bold text-[#524632]">Explore Care</h2>
+            <div class="flex-grow border-t-2 border-[#524632] mx-4"></div>
+            <a href="ExploreCarePage.html" class="ml-4 text-[#524632] font-semibold hover:underline">See More</a>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mt-8">
+            <!-- Peace of Mind -->
+            <a href="peace-of-mind.html" class="block text-center hover:opacity-80 transition">
+                <div class="w-full aspect-square overflow-hidden rounded-lg">
+                    <img src="https://i.pinimg.com/736x/a2/5d/b0/a25db018c90ca4c00beb23a8ee80e05a.jpg"
+                        class="w-full h-full object-cover" alt="Peace of Mind">
+                </div>
+                <h3 class="font-semibold mt-2">Peace of Mind, Every Day</h3>
+                <p class="text-xs text-gray-600">Discover articles, techniques, and activities to help you achieve
+                    tranquility and balance in your life.</p>
+            </a>
+
+            <!-- Let Go of Stress -->
+            <a href="let-go-of-stress.html" class="block text-center hover:opacity-80 transition">
+                <div class="w-full aspect-square overflow-hidden rounded-lg">
+                    <img src="https://i.pinimg.com/736x/d9/78/4a/d9784acc1eaf775a4943872059d67067.jpg"
+                        class="w-full h-full object-cover" alt="Let Go of Stress">
+                </div>
+                <h3 class="font-semibold mt-2">Let Go of Stress, Embrace Mental Wellness</h3>
+                <p class="text-xs text-gray-600">Find relaxation methods that suit you, along with expert guidance
+                    tailored to your needs.</p>
+            </a>
+
+            <!-- Serenity at Home -->
+            <a href="serenity-at-home.html" class="block text-center hover:opacity-80 transition">
+                <div class="w-full aspect-square overflow-hidden rounded-lg">
+                    <img src="https://i.pinimg.com/736x/0e/3d/36/0e3d36d83df7af0c65469a9760f593e9.jpg"
+                        class="w-full h-full object-cover" alt="Serenity at Home">
+                </div>
+                <h3 class="font-semibold mt-2">Experience Serenity from the Comfort of Your Home</h3>
+                <p class="text-xs text-gray-600">Learn mindfulness techniques and relaxation practices through
+                    easy-to-use online tools.</p>
+            </a>
+
+            <!-- Brighter Mental Health -->
+            <a href="brighter-mental-health.html" class="block text-center hover:opacity-80 transition">
+                <div class="w-full aspect-square overflow-hidden rounded-lg">
+                    <img src="https://i.pinimg.com/736x/2c/ae/2e/2cae2ee4d2a5b0a185b1c7037fa62292.jpg"
+                        class="w-full h-full object-cover" alt="Brighter Mental Health">
+                </div>
+                <h3 class="font-semibold mt-2">Ignite a Brighter Mental Health Journey</h3>
+                <p class="text-xs text-gray-600">Get personalized counseling from professionals with flexible packages
+                    designed for you.</p>
+            </a>
+        </div>
+
+    </section>
+
+    <!-- Meditation Section -->
+    <section class="mt-16 px-4 lg:px-20">
+        <div class="flex items-center gap-4">
+            <h2 class="text-2xl font-bold text-[#524632] whitespace-nowrap">Meditation</h2>
+            <div class="flex-grow border-t-2 border-[#524632]"></div>
+            <a href="explore-care.html" class="text-[#524632] font-semibold hover:underline pl-4">See More</a>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-12 mt-6">
+            <!-- Body Scan Meditation -->
+            <div class="flex items-center gap-8">
+                <div class="flex-grow">
+                    <a href="MeditationPage.html" class="block hover:underline">
+                        <h3 class="font-semibold">Body Scan Meditation</h3>
+                    </a>
+                    <p class="text-sm text-gray-600">Cultivate your ability to be mindful and tuned in to what you’re
+                        feeling with this body scan meditation.</p>
+                </div>
+                <a href="MeditationPage.html" class="min-w-[32px]">
+                    <img src="https://cdn-icons-png.flaticon.com/512/106/106111.png"
+                        class="w-8 h-8 hover:opacity-80 transition flex-shrink-0" alt="Audio Icon">
+                </a>
+                <a href="MeditationPage.html" class="w-48 h-48 rounded-2xl overflow-hidden flex-shrink-0 block">
+                    <img src="https://i.pinimg.com/736x/f6/d9/13/f6d913bbaff979f1b71909ac0ef1c867.jpg"
+                        class="w-full h-full object-cover hover:opacity-80 transition">
+                </a>
+            </div>
+
+            <!-- Your Sanctuary of Stillness -->
+            <div class="flex items-center gap-8">
+                <div class="flex-grow">
+                    <a href="sanctuary.html" class="block hover:underline">
+                        <h3 class="font-semibold">Your Sanctuary of Stillness</h3>
+                    </a>
+                    <p class="text-sm text-gray-600">Start your mindfulness journey with guided meditations designed to
+                        fit your busy schedule.</p>
+                </div>
+                <a href="sanctuary-audio.html" class="min-w-[32px]">
+                    <img src="https://cdn-icons-png.flaticon.com/512/106/106111.png"
+                        class="w-8 h-8 hover:opacity-80 transition flex-shrink-0" alt="Audio Icon">
+                </a>
+                <a href="sanctuary.html" class="w-48 h-48 rounded-2xl overflow-hidden flex-shrink-0 block">
+                    <img src="https://i.pinimg.com/736x/ba/84/34/ba84344f71acea31338fafbdd99e984e.jpg"
+                        class="w-full h-full object-cover hover:opacity-80 transition">
+                </a>
+            </div>
+
+            <!-- Gratitude in Difficult Times -->
+            <div class="flex items-center gap-8">
+                <div class="flex-grow">
+                    <a href="gratitude.html" class="block hover:underline">
+                        <h3 class="font-semibold">Gratitude in Difficult Times</h3>
+                    </a>
+                    <p class="text-sm text-gray-600">Change your perspective and fight negativity by practicing
+                        gratitude.</p>
+                </div>
+                <a href="gratitude-audio.html" class="min-w-[32px]">
+                    <img src="https://cdn-icons-png.flaticon.com/512/106/106111.png"
+                        class="w-8 h-8 hover:opacity-80 transition flex-shrink-0" alt="Audio Icon">
+                </a>
+                <a href="gratitude.html" class="w-48 h-48 rounded-2xl overflow-hidden flex-shrink-0 block">
+                    <img src="https://i.pinimg.com/736x/84/64/10/846410f44cd174e7d1ea02adc528eca4.jpg"
+                        class="w-full h-full object-cover hover:opacity-80 transition">
+                </a>
+            </div>
+
+            <!-- Mindful Breathing Meditation -->
+            <div class="flex items-center gap-8">
+                <div class="flex-grow">
+                    <a href="mindful-breathing.html" class="block hover:underline">
+                        <h3 class="font-semibold">Mindful Breathing Meditation</h3>
+                    </a>
+                    <p class="text-sm text-gray-600">Cultivate your ability to be mindful and tuned in to what you’re
+                        feeling with this body scan meditation.</p>
+                </div>
+                <a href="mindful-breathing-audio.html" class="min-w-[32px]">
+                    <img src="https://cdn-icons-png.flaticon.com/512/106/106111.png"
+                        class="w-8 h-8 hover:opacity-80 transition flex-shrink-0" alt="Audio Icon">
+                </a>
+                <a href="mindful-breathing.html" class="w-48 h-48 rounded-2xl overflow-hidden flex-shrink-0 block">
+                    <img src="https://i.pinimg.com/736x/27/42/49/2742499cab2d3bc747b68dc084893c5b.jpg"
+                        class="w-full h-full object-cover hover:opacity-80 transition">
+                </a>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Footer -->
+    <footer class="bg-[#A5AA52] text-white mt-16 py-10 px-4 lg:px-20">
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-10">
+            <!-- Logo & Description -->
+            <div>
+                <div class="flex items-center">
+                    <img src="https://cdn-icons-png.flaticon.com/512/1454/1454818.png" class="w-8 h-8 mr-2" alt="Logo">
+                    <h3 class="text-xl font-bold">Mind<span class="text-[#EEC643]">Glow</span></h3>
+                </div>
+                <p class="mt-4 text-sm">
+                    Mind Glow is committed to promoting mental well-being, reducing stress, and creating balance in life
+                    through mindfulness, meditation, and personalized support from mental health experts.
+                </p>
+            </div>
+
+            <!-- Newsletter Subscription -->
+            <div>
+                <h3 class="text-lg font-bold">Stay Updated</h3>
+                <p class="text-sm mt-2">
+                    Subscribe for exclusive updates on mental health tips, meditation techniques, and special offers.
+                    Let’s build a peaceful and fulfilling life—together!
+                </p>
+                <form class="flex mt-4" onsubmit="return validateEmail()">
+                    <input type="email" id="email" placeholder="Enter your email Address"
+                        class="p-2 w-full text-black border rounded-l-lg" required>
+                    <button type="submit" class="bg-white text-black px-4 py-2 rounded-r-lg border border-black">Subscribe</button>
+                </form>
+            </div>
+
+            <!-- Contact Information -->
+            <div>
+                <h3 class="text-lg font-bold">Follow us</h3>
+                <div class="flex space-x-4 mt-2">
+                    <a href="https://instagram.com" target="_blank" class="min-w-[24px] flex-shrink-0">
+                        <img src="https://cdn-icons-png.flaticon.com/512/2111/2111463.png"
+                            class="w-6 h-6 hover:opacity-80 transition" alt="Instagram">
+                    </a>
+                    <a href="https://facebook.com" target="_blank" class="min-w-[24px] flex-shrink-0">
+                        <img src="https://cdn-icons-png.flaticon.com/512/145/145802.png"
+                            class="w-6 h-6 hover:opacity-80 transition" alt="Facebook">
+                    </a>
+                    <a href="https://twitter.com" target="_blank" class="min-w-[24px] flex-shrink-0">
+                        <img src="https://cdn-icons-png.flaticon.com/512/145/145812.png"
+                            class="w-6 h-6 hover:opacity-80 transition" alt="Twitter">
+                    </a>
+                </div>
+
+                <h3 class="text-lg font-bold mt-4">Call us</h3>
+                <p class="text-sm">+1 800 854-36-80</p>
+
+                <h3 class="text-lg font-bold mt-4">Email</h3>
+                <p class="text-sm">support@mindglow.com</p>
+
+                <h3 class="text-lg font-bold mt-4">Address</h3>
+                <p class="text-sm">123/45 Sukhumjai Road, Jai Dee District, Bangkok 10110</p>
+            </div>
+        </div>
+
+        <!-- Divider -->
+        <div class="border-t border-white mt-10"></div>
+
+        <!-- Footer Links -->
+        <div class="flex flex-col md:flex-row justify-between items-center text-xs mt-6">
+            <p>© 2021 All Rights Reserved</p>
+            <div class="flex space-x-6 mt-2 md:mt-0">
+                <a href="#" class="hover:underline">Privacy Policy</a>
+                <a href="#" class="hover:underline">Terms of Use</a>
+                <a href="#" class="hover:underline">Sales and Refunds</a>
+                <a href="#" class="hover:underline">Legal</a>
+                <a href="#" class="hover:underline">Site Map</a>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+<!-- JavaScript สำหรับเลื่อนภาพ -->
+<script>
+    const slider = document.getElementById('slider');
+    const images = slider.children;
+    let index = 0;
+
+    function updateSliderPosition() {
+        slider.style.transform = `translateX(-${index * 100}%)`;
+    }
+
+    document.getElementById('next').addEventListener('click', () => {
+        index = (index + 1) % images.length; // ไปที่รูปถัดไป หรือกลับไปที่รูปแรก
+        updateSliderPosition();
+    });
+
+    document.getElementById('prev').addEventListener('click', () => {
+        index = (index - 1 + images.length) % images.length; // ไปที่รูปก่อนหน้า หรือไปที่รูปสุดท้าย
+        updateSliderPosition();
+    });
+
+</script>
+
+</html>

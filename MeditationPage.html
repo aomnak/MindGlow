@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mind Glow</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="bg-[#FFFEF4] text-[#524632] font-sans">
+
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="logo">
+            <img src="https://cdn-icons-png.flaticon.com/512/1454/1454818.png" class="w-10 h-10 mr-2" alt="Logo">
+            <span>Mind<span class="text-[#EEC643]">Glow</span></span>
+        </div>
+        <div class="menu hidden md:flex space-x-8 text-lg font-semibold">
+            <a href="index.html" class="hover:underline">Home</a>
+            <a href="#" class="hover:underline">Health & Wellness</a>
+            <a href="#" class="hover:underline">Services</a>
+            <a href="about.html" class="hover:underline">About us</a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="flex flex-col lg:flex-row items-start lg:items-center mt-10 px-4 lg:px-20">
+        <div class="lg:w-1/2 space-y-4">
+            <h3 class="text-lg font-medium text-[#3C5533]">Meditation</h3>
+            <h1 class="text-4xl font-bold">Body Scan Meditation</h1>
+            <p class="text-lg text-gray-700">Cultivate your ability to be mindful and tuned in to what you’re feeling
+                with this body scan meditation.</p>
+            <div class="flex items-center gap-6 text-gray-600">
+                <span>⏱ Duration: 13:46</span>
+                <span>⚡ Difficulty: Easy</span>
+            </div>
+            <button class="bg-[#524632] text-white py-2 px-6 rounded-lg flex items-center gap-2">
+                <img src='https://cdn-icons-png.flaticon.com/512/724/724933.png' class='w-5 h-5' alt='Download icon'>
+                Download
+            </button>
+        </div>
+        <div class="lg:w-1/2 mt-6 lg:mt-0">
+            <video class="rounded-lg w-full aspect-video" controls>
+                <source src="meditation-video.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+    </section>
+
+    <!-- Content Section -->
+    <section class="flex flex-col lg:flex-row mt-16 px-4 lg:px-20">
+        <div class="lg:w-2/3">
+            <h2 class="text-2xl font-bold">Body Scan Meditation</h2>
+            <p class="mt-4 text-lg text-gray-700">The body scan is one of the most effective ways to begin a mindfulness
+                meditation practice. The purpose is to tune in to your body—to reconnect to your physical self—and
+                notice any sensations you’re feeling without judgement. While many people find the body scan relaxing,
+                relaxation is not the primary goal. The goal is to train the mind to be more open and aware of sensory
+                experiences—and ultimately, more accepting. With time and practice, the body scan will build your
+                ability to focus and be fully present in your life.</p>
+            <div class="mt-6 bg-[#F8F3E7] p-6 rounded-lg shadow-md">
+                <h3 class="text-xl font-medium text-[#A5AA52]">Talk to a Licensed Therapist</h3>
+                <p class="mt-2 text-gray-700">BetterHelp is an online therapy service that matches you to licensed,
+                    accredited therapists who can help with depression, anxiety, relationships, and more. Take the
+                    assessment and get matched with a therapist in as little as 48 hours.</p>
+                <button class="mt-4 bg-[#EEC643] text-[#524632] py-2 px-6 rounded-lg">Take Assessment</button>
+            </div>
+        </div>
+        
+        <aside class="lg:w-1/3 mt-10 lg:mt-0 more-meditation">
+            <h3>More in Meditation</h3>
+        
+            <div class="mt-4">
+                <a href="meditation-category.html" class="category-link">Meditation</a>
+                <h4>
+                    <a href="guided-imagery.html" class="title-link">
+                        Sleep Meditation Using Guided Imagery
+                    </a>
+                </h4>
+                <p>
+                    Harness the power of your imagination to relax your body and mind and get to sleep.
+                </p>
+            </div>
+        
+            <div class="mt-6">
+                <a href="meditation-category.html" class="category-link">Meditation</a>
+                <h4>
+                    <a href="bedtime-sleep.html" class="title-link">
+                        Bedtime Meditation for Sleep
+                    </a>
+                </h4>
+                <p>
+                    This relaxing sleep meditation helps you unwind at bedtime, let go of tension, and ease the transition into sleep.
+                </p>
+            </div>
+        </aside>        
+        
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-[#A5AA52] text-white mt-16 py-10 px-4 lg:px-20">
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-10">
+            <!-- Logo & Description -->
+            <div>
+                <div class="flex items-center">
+                    <img src="https://cdn-icons-png.flaticon.com/512/1454/1454818.png" class="w-8 h-8 mr-2" alt="Logo">
+                    <h3 class="text-xl font-bold">Mind<span class="text-[#EEC643]">Glow</span></h3>
+                </div>
+                <p class="mt-4 text-sm">
+                    Mind Glow is committed to promoting mental well-being, reducing stress, and creating balance in life
+                    through mindfulness, meditation, and personalized support from mental health experts.
+                </p>
+            </div>
+
+            <!-- Newsletter Subscription -->
+            <div>
+                <h3 class="text-lg font-bold">Stay Updated</h3>
+                <p class="text-sm mt-2">
+                    Subscribe for exclusive updates on mental health tips, meditation techniques, and special offers.
+                    Let’s build a peaceful and fulfilling life—together!
+                </p>
+                <form class="flex mt-4" onsubmit="return validateEmail()">
+                    <input type="email" id="email" placeholder="Enter your email Address"
+                        class="p-2 w-full text-black border rounded-l-lg" required>
+                    <button type="submit" class="bg-white text-black px-4 py-2 rounded-r-lg border border-black">Subscribe</button>
+                </form>                
+            </div>
+
+            <!-- Contact Information -->
+            <div>
+                <h3 class="text-lg font-bold">Follow us</h3>
+                <div class="flex space-x-4 mt-2">
+                    <a href="https://instagram.com" target="_blank" class="min-w-[24px] flex-shrink-0">
+                        <img src="https://cdn-icons-png.flaticon.com/512/2111/2111463.png"
+                            class="w-6 h-6 hover:opacity-80 transition" alt="Instagram">
+                    </a>
+                    <a href="https://facebook.com" target="_blank" class="min-w-[24px] flex-shrink-0">
+                        <img src="https://cdn-icons-png.flaticon.com/512/145/145802.png"
+                            class="w-6 h-6 hover:opacity-80 transition" alt="Facebook">
+                    </a>
+                    <a href="https://twitter.com" target="_blank" class="min-w-[24px] flex-shrink-0">
+                        <img src="https://cdn-icons-png.flaticon.com/512/145/145812.png"
+                            class="w-6 h-6 hover:opacity-80 transition" alt="Twitter">
+                    </a>
+                </div>
+
+                <h3 class="text-lg font-bold mt-4">Call us</h3>
+                <p class="text-sm">+1 800 854-36-80</p>
+
+                <h3 class="text-lg font-bold mt-4">Email</h3>
+                <p class="text-sm">support@mindglow.com</p>
+
+                <h3 class="text-lg font-bold mt-4">Address</h3>
+                <p class="text-sm">123/45 Sukhumjai Road, Jai Dee District, Bangkok 10110</p>
+            </div>
+        </div>
+
+        <!-- Divider -->
+        <div class="border-t border-white mt-10"></div>
+
+        <!-- Footer Links -->
+        <div class="flex flex-col md:flex-row justify-between items-center text-xs mt-6">
+            <p>© 2021 All Rights Reserved</p>
+            <div class="flex space-x-6 mt-2 md:mt-0">
+                <a href="#" class="hover:underline">Privacy Policy</a>
+                <a href="#" class="hover:underline">Terms of Use</a>
+                <a href="#" class="hover:underline">Sales and Refunds</a>
+                <a href="#" class="hover:underline">Legal</a>
+                <a href="#" class="hover:underline">Site Map</a>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
